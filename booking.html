@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appar Cafe</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+ <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style src="./assets/css/style.css"></style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+
+      <!-- LEFT SIDE -->
+      <div class="top-left">
+        <div class="top-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919712552425">+91 97125 52425</a>
+        </div>
+
+        <div class="top-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Open daily 6:00 AM – 11:00 PM</span>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="top-right">
+        <div class="top-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:apparcafe@gmail.com">apparcafe@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Appar Cafe Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav gap-lg-4 text-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+  <section id="book-a-table" class="book-a-table section-bg" style="margin-top: 70px;">
+    <div class="container" data-aos="fade-up">
+
+    <div class="food-title">
+      <h2 style="color: #cda45e; text-align: center;">Reservation</h2>
+            <div class="divider--shape-4"></div>
+    
+      <p style="text-align: center;">Book a Table</p>
+    </div>
+      <form id="bookingForm" onsubmit="return submitForm()" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" oninput="validateName()">
+                <small id="nameError" class="text-danger" style="display: none;">Please enter at least 4 characters.</small>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" oninput="validateEmail()">
+                <small id="emailError" class="text-danger" style="display: none;">Please enter a valid email.</small>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" oninput="validatePhone()">
+                <small id="phoneError" class="text-danger" style="display: none;">Please enter a 10-digit phone number.</small>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="date" name="date" class="form-control" id="date" oninput="validateDate()">
+                <small id="dateError" class="text-danger" style="display: none;">Please select a date.</small>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="time" class="form-control" name="time" id="time" oninput="validateTime()">
+                <small id="timeError" class="text-danger" style="display: none;">Please select a time.</small>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="number" class="form-control" name="people" id="people" placeholder="# of people" min="1" oninput="validatePeople()">
+                <small id="peopleError" class="text-danger" style="display: none;">Please enter at least 1 person.</small>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" oninput="validateMessage()"></textarea>
+            <small id="messageError" class="text-danger" style="display: none;">Please enter a message.</small>
+        </div>
+        <div class="text-center my-5"><button type="submit" id="submitButton" disabled>Book a Table</button></div>
+    </form>
+
+    </div>
+  </section>
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6">
+            <div class="footer-info">
+              <h3>Appar Cafe</h3>
+              <p>
+                Building Plot # C159, Sector # M10, Abudhabi.
+Behind Phoenix Hospital<br>
+                <strong>Phone:</strong> +91 9712552425<br>
+                <strong>Email:</strong> apparcafe@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/profile.php?id=61568537251608&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/appar_cafe_official/profilecard/?igsh=MXY5eTU3dmQ4MTFrYQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Menu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="catering.html">Catering</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Reservation</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Menu</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Breakfast</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Snacks</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Dinner</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">On Special Day</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Appar Cafe</span></strong>. All Rights Reserved <span id="year"></span>
+    </div>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Define validation functions for each field
+    function validateName() {
+        const name = document.getElementById("name").value;
+        const nameError = document.getElementById("nameError");
+        if (name.trim().length < 4) {
+            nameError.style.display = "block";
+            return false;
+        } else {
+            nameError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            emailError.style.display = "block";
+            return false;
+        } else {
+            emailError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validatePhone() {
+        const phone = document.getElementById("phone").value;
+        const phoneError = document.getElementById("phoneError");
+        if (phone.length !== 10 || isNaN(phone)) {
+            phoneError.style.display = "block";
+            return false;
+        } else {
+            phoneError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateDate() {
+        const date = document.getElementById("date").value;
+        const dateError = document.getElementById("dateError");
+        if (!date) {
+            dateError.style.display = "block";
+            return false;
+        } else {
+            dateError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateTime() {
+        const time = document.getElementById("time").value;
+        const timeError = document.getElementById("timeError");
+        if (!time) {
+            timeError.style.display = "block";
+            return false;
+        } else {
+            timeError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validatePeople() {
+        const people = document.getElementById("people").value;
+        const peopleError = document.getElementById("peopleError");
+        if (people < 1) {
+            peopleError.style.display = "block";
+            return false;
+        } else {
+            peopleError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        const message = document.getElementById("message").value;
+        const messageError = document.getElementById("messageError");
+        if (message.trim() === '') {
+            messageError.style.display = "block";
+            return false;
+        } else {
+            messageError.style.display = "none";
+            return true;
+        }
+    }
+
+    // Combined validation function
+    function validateForm() {
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isPhoneValid = validatePhone();
+        const isDateValid = validateDate();
+        const isTimeValid = validateTime();
+        const isPeopleValid = validatePeople();
+        const isMessageValid = validateMessage();
+
+        document.getElementById("submitButton").disabled = !(isNameValid && isEmailValid && isPhoneValid && isDateValid && isTimeValid && isPeopleValid && isMessageValid);
+        return isNameValid && isEmailValid && isPhoneValid && isDateValid && isTimeValid && isPeopleValid && isMessageValid;
+    }
+
+    // Event listeners for validation
+    document.getElementById("name").addEventListener("input", validateForm);
+    document.getElementById("email").addEventListener("input", validateForm);
+    document.getElementById("phone").addEventListener("input", validateForm);
+    document.getElementById("date").addEventListener("input", validateForm);
+    document.getElementById("time").addEventListener("input", validateForm);
+    document.getElementById("people").addEventListener("input", validateForm);
+    document.getElementById("message").addEventListener("input", validateForm);
+
+    // Form submission
+    function submitForm() {
+        if (!validateForm()) return false;
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const people = document.getElementById("people").value;
+        const message = document.getElementById("message").value;
+
+        const whatsappURL = `https://api.whatsapp.com/send?phone=+919712552425&text=
+            Name: ${encodeURIComponent(name)}
+            %0AEmail: ${encodeURIComponent(email)}
+            %0APhone: ${encodeURIComponent(phone)}
+            %0ADate: ${encodeURIComponent(date)}
+            %0ATime: ${encodeURIComponent(time)}
+            %0APeople: ${encodeURIComponent(people)}
+            %0AMessage: ${encodeURIComponent(message)}`;
+
+        window.open(whatsappURL, '_blank');
+        return false; // Prevent form submission
+    }
+</script>
+</body>
+
+</html>

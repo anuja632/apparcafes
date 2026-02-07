@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appar Cafe</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+ <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style src="./assets/css/style.css"></style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+
+      <!-- LEFT SIDE -->
+      <div class="top-left">
+        <div class="top-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919712552425">+91 97125 52425</a>
+        </div>
+
+        <div class="top-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Open daily 6:00 AM – 11:00 PM</span>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="top-right">
+        <div class="top-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:apparcafe@gmail.com">apparcafe@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Appar Cafe Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav gap-lg-4 text-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+  <section id="book-a-table" class="book-a-table section-bg" style="margin-top: 70px;">
+    <div class="container" data-aos="fade-up">
+    <div class="food-title">
+      <h2 style="color: #cda45e; text-align: center;">Careers</h2>
+            <div class="divider--shape-4"></div>
+    
+      <p style="text-align: center;">We Require Full Time/Part Time</p>
+    </div>
+
+
+      <!-- Application Form HTML -->
+    <div class="container ">
+        <h2 class="text-start mb-5">Career Application Form</h2>
+        <form 
+  id="applicationForm" 
+  action="https://formsubmit.co/apparcafe@gmail.com" 
+  method="POST" 
+  enctype="multipart/form-data"
+  onsubmit="return updateSubject()"
+>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" id="subject" value="New Application Form from Submission">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://">
+
+  <div class="row g-3">
+    <!-- Name Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name">
+        <label for="name" style="color: black;">Your Name</label>
+      </div>
+      <small class="text-danger" id="nameError"></small>
+    </div>
+    
+    <!-- Email Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email">
+        <label for="email" style="color: black;">Your Email</label>
+      </div>
+      <small class="text-danger" id="emailError"></small>
+    </div>
+    
+    <!-- Phone Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="phone" name="Phone" placeholder="Your Phone">
+        <label for="phone" style="color: black;">Your Phone</label>
+      </div>
+      <small class="text-danger" id="phoneError"></small>
+    </div>
+    
+    <!-- Post Applied For Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="post" name="Post Applied For" placeholder="Your Post">
+        <label for="post" style="color: black;">Post Applied For</label>
+      </div>
+      <small class="text-danger" id="postError"></small>
+    </div>
+    
+    <!-- Designation Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="designation" name="Designation" placeholder="Your Designation">
+        <label for="designation" style="color: black;">Current Designation</label>
+      </div>
+      <small class="text-danger" id="designationError"></small>
+    </div>
+    
+    <!-- Company Input -->
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="company" name="Company" placeholder="Your Company">
+        <label for="company" style="color: black;">Current Company</label>
+      </div>
+      <small class="text-danger" id="companyError"></small>
+    </div>
+    
+    <!-- Skills Input -->
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Your Skills" id="skills" name="Skills" style="height: 100px"></textarea>
+        <label for="skills" style="color: black;">Your Skills</label>
+      </div>
+      <small class="text-danger" id="skillsError"></small>
+    </div>
+    
+    <!-- Resume Upload -->
+    <div class="col-12">
+      <div class="form-floating">
+        <input type="file" class="form-control" id="resume" name="Resume" accept=".pdf,.doc,.docx">
+        <label for="resume" style="color: black;">Drop Your Resume</label>
+      </div>
+      <small class="text-danger" id="resumeError"></small>
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="col-12">
+      <button class="py-3 mb-4" type="submit" id="applyNow" disabled style="background-color: #cda45e; color:white;">Apply Now</button>
+    </div>
+  </div>
+</form>
+
+<script>
+  const form = document.getElementById('applicationForm');
+  const fields = ['name', 'email', 'phone', 'post', 'designation', 'company', 'skills', 'resume'];
+  const applyNowButton = document.getElementById('applyNow');
+
+  const patterns = {
+    name: /^[a-zA-Z\s]{3,}$/,
+    email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+    phone: /.+/,
+    post: /.+/,
+    designation: /.+/,
+    company: /.+/,
+    skills: /.+/,
+    resume: /.+/
+  };
+
+  function validateField(field) {
+    const input = document.getElementById(field);
+    const errorElement = document.getElementById(`${field}Error`);
+    if (patterns[field].test(input.value)) {
+      errorElement.textContent = '';
+      return true;
+    } else {
+      errorElement.textContent = `Please enter a valid ${field.replace('_', ' ')}.`;
+      return false;
+    }
+  }
+
+  function checkAllFields() {
+    let allValid = true;
+    fields.forEach((field) => {
+      const valid = validateField(field);
+      if (!valid) allValid = false;
+    });
+    applyNowButton.disabled = !allValid;
+  }
+
+  fields.forEach((field) => {
+    const input = document.getElementById(field);
+    input.addEventListener('input', () => {
+      validateField(field);
+      checkAllFields();
+    });
+  });
+
+  function updateSubject() {
+    const name = document.getElementById('name').value.trim();
+    const subjectField = document.getElementById('subject');
+    if (name) {
+      subjectField.value = `New Application From ${name}`;
+    }
+    return true;
+  }
+</script>        
+
+    </div>
+    </section>
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6">
+            <div class="footer-info">
+              <h3>Appar Cafe</h3>
+              <p>
+                Building Plot # C159, Sector # M10, Abudhabi.
+Behind Phoenix Hospital<br>
+                <strong>Phone:</strong> +91 9712552425<br>
+                <strong>Email:</strong> apparcafe@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/profile.php?id=61568537251608&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/appar_cafe_official/profilecard/?igsh=MXY5eTU3dmQ4MTFrYQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Menu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="catering.html">Catering</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Reservation</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Menu</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Breakfast</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Snacks</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Dinner</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">On Special Day</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Appar Cafe</span></strong>. All Rights Reserved <span id="year"></span>
+    </div>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</body>
+
+</html>

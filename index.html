@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appar Cafe</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+ <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style src="./assets/css/style.css"></style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+
+      <!-- LEFT SIDE -->
+      <div class="top-left">
+        <div class="top-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919712552425">+91 97125 52425</a>
+        </div>
+
+        <div class="top-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Open daily 6:00 AM – 11:00 PM</span>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="top-right">
+        <div class="top-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:apparcafe@gmail.com">apparcafe@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Appar Cafe Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav gap-lg-4 text-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<style>
+.hero {
+  height: 85vh;
+  background: url("https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg")
+    center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(50, 32, 18, 0.75);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-title {
+  font-family: "Alice", serif;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 16px;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.35);
+
+}
+
+.hero-sub {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #f1e8d9;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.35);
+
+}
+
+.hero-btn {
+  background: #c9a24d;
+  color: #000;
+  padding: 16px 42px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* --------------------------------
+   BOTTOM PATTERN (FOODILY STYLE)
+-------------------------------- */
+.hero-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: url("https://preview.designtone.xyz/html/foodily/images/main-slider/pattern-1.png")
+    center bottom / cover no-repeat;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Blend fade so pattern feels premium */
+.hero-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(52, 32, 18, 0.95),
+    rgba(52, 32, 18, 0)
+  );
+}
+
+</style>
+</head>
+
+<body>
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">A Timeless Taste of South India</h1>
+    <p class="hero-sub">
+      Authentic vegetarian recipes inspired by tradition,<br>
+      served with warmth and simplicity.
+    </p>
+    <a href="#menu" class="hero-btn">View Our Menu</a>
+    
+  </div>
+    <div class="hero-pattern"></div>
+
+</section>
+
+
+
+<!-- <div class="video-wrapper">
+  <video id="heroVideo" autoplay muted loop playsinline>
+    <source src="./images/bannervideo.mp4" type="video/mp4">
+  </video>
+
+  <div class="sound-btn" onclick="toggleSound()">
+    <i id="soundIcon" class="fa-solid fa-volume-high"></i>
+  </div>
+</div> -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+<h2 style="color: #cda45e; text-align: center;">About Us</h2>
+            <div class="divider--shape-4"></div>
+        <div class="row">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <div class="video-wrapper">
+  <video id="heroVideo" autoplay muted loop playsinline>
+    <source src="./images/bannervideo.mp4" type="video/mp4">
+  </video>
+
+  <div class="sound-btn" onclick="toggleSound()">
+    <i id="soundIcon" class="fa-solid fa-volume-high"></i>
+  </div>
+</div>
+              <!-- <img src="assets/img/about.jpg" alt=""> -->
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+<h2 class="abouth">Our Story</h2>
+
+            <p>
+              Since 1972, our father has been dedicated to running a café in our village, providing the community with authentic South Indian vegetarian cuisine, with a special emphasis on dosa. His passion for cooking has made the café a beloved local spot, where generations have gathered to enjoy the rich flavors and traditions of South Indian food.
+            </p>
+            <p>
+              The café features a variety of dosas, from classic plain and masala to unique regional variations, all made with freshly ground batter and served with a selection of homemade chutneys and sambar. Over the years, our father has perfected his recipes, ensuring that each dish reflects the true essence of South Indian culinary heritage.
+            </p>
+            <div class="btns">
+              <a href="aboutus.html" id="aboutknow" class="btn-menu animated fadeInUp scrollto">Know More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+<script>
+  function toggleSound() {
+    const video = document.getElementById('heroVideo');
+    const icon = document.getElementById('soundIcon');
+
+    video.muted = !video.muted;
+
+    icon.classList.toggle('fa-volume-high', !video.muted);
+    icon.classList.toggle('fa-volume-xmark', video.muted);
+  }
+</script>
+
+<!-- ======= Menu Section ======= -->
+<section id="menu" class="menu">
+  <div class="container" data-aos="fade-up">
+        <div class="food-title">
+      <h2 style="color: #cda45e; text-align: center;">Menu</h2>
+            <div class="divider--shape-4"></div>
+    
+<p>Curated Flavors for Every Craving</p>
+    </div>
+    
+
+    <!-- Filters -->
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="menu-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-breakfast">Breakfast</li>
+          <li data-filter=".filter-snacks">Snacks</li>
+          <li data-filter=".filter-dinner">Dinner</li>
+          <li data-filter=".filter-special">Special Orders</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- Snacks -->
+      <div class="col-lg-6 menu-item filter-snacks">
+        <img src="./images/Specials/menu1.jpg"
+             class="responsive-img"
+             style="width:100%;height:100%;"
+             alt="Snacks Menu">
+      </div>
+
+      <!-- Breakfast -->
+      <div class="col-lg-6 menu-item filter-breakfast">
+        <img src="./images/Specials/menu2.jpg"
+             class="responsive-img"
+             style="width:100%;height:100%;"
+             alt="Breakfast Menu">
+      </div>
+
+      <!-- Dinner -->
+      <div class="col-lg-6 menu-item filter-dinner">
+        <img src="./images/Specials/menu3.jpg"
+             class="responsive-img"
+             style="width:100%;height:100%;"
+             alt="Dinner Menu">
+      </div>
+
+      <!-- Special Orders -->
+      <div class="col-lg-6 menu-item filter-special">
+        <img src="./images/Specials/menu4.jpg"
+             class="responsive-img"
+             style="width:100%;height:100%;"
+             alt="Birthday & Corporate Orders">
+      </div>
+
+    </div>
+
+    <br>
+
+    <!-- View More Button -->
+    <div class="btns text-center">
+      <a href="menu.html" class="btn-menu animated fadeInUp scrollto">
+        View More
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- End Menu Section -->
+<section id="why-choose" class="why-choose-section">
+  <div class="container text-center">
+
+    <h2 data-aos="fade-up">Why Choose Appar Cafe</h2>
+    <div class="divider--shape-4" data-aos="zoom-in"></div>
+
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+      Good food, great moments, every day
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-3" data-aos="fade-down" data-aos-delay="200">
+        <div class="why-box">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h5>Authentic Taste</h5>
+          <p>Traditional recipes with rich flavor.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-box">
+          <i class="fa-solid fa-leaf"></i>
+          <h5>Fresh Ingredients</h5>
+          <p>Quality ingredients used daily.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-down" data-aos-delay="400">
+        <div class="why-box">
+          <i class="fa-solid fa-kitchen-set"></i>
+          <h5>Hygienic Kitchen</h5>
+          <p>Clean and safe cooking.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+        <div class="why-box">
+          <i class="fa-solid fa-wallet"></i>
+          <h5>Affordable Prices</h5>
+          <p>Great food at honest prices.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+
+
+
+/* SECTION */
+.food-section{
+  padding:90px 0;
+  background:#fff5ec;
+}
+
+.container{
+  max-width:1300px;
+  margin:auto;
+  padding:0 24px;
+}
+
+/* TITLE */
+.food-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.food-title h2{
+  font-family:"Playfair Display",serif;
+  font-size:40px;
+}
+.food-title p{
+  color:#555;
+}
+
+/* TABS */
+.food-tabs{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:60px;
+}
+.food-tabs button{
+  padding:12px 28px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  background:#fff;
+  font-weight:500;
+  transition:.3s;
+}
+.food-tabs button.active{
+  background:#cda45e;
+  color:#fff;
+}
+
+/* CONTENT */
+.food-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.food-number{
+  font-size:120px;
+  font-weight:700;
+  color:rgba(205,164,94,.25);
+}
+
+.food-left h4{
+  color:#cda45e;
+  letter-spacing:2px;
+  margin:10px 0;
+}
+
+.food-left p{
+  background:#fff;
+  padding:24px;
+  border-radius:14px;
+  line-height:1.8;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  max-width:520px;
+}
+
+.food-image{
+  border:6px solid #cda45e;
+  border-radius:18px;
+  overflow:hidden;
+}
+.food-image img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .food-content{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .food-left p{
+    margin:auto;
+  }
+  .food-number{
+    font-size:90px;
+  }
+}
+</style>
+<section class="food-section">
+  <div class="container">
+
+    <div class="food-title">
+      <h2 style="color: #cda45e; text-align: center;">Our Signature Rice Dishes</h2>
+            <div class="divider--shape-4"></div>
+    
+      <p>Traditional flavors, slow-cooked perfection.</p>
+    </div>
+
+    <div class="food-tabs">
+      <button class="active" data-index="0">Veg Biryani</button>
+      <button data-index="1">Mushroom Biryani</button>
+      <button data-index="2">Arisi Paruppu Sadam</button>
+      <button data-index="3">Coriander Rice</button>
+    </div>
+
+    <div class="food-content">
+      <div class="food-left">
+        <div class="food-number">01</div>
+        <h4>VEG BIRYANI</h4>
+        <p>
+          Aromatic basmati rice layered with fresh seasonal vegetables and traditional spices,
+          slow-cooked to lock in flavor and finished with fragrant herbs and crispy fried onions.
+        </p>
+      </div>
+
+      <div class="food-right">
+        <div class="food-image">
+          <img src="https://simranz.com/wp-content/uploads/2024/06/Jain_veg_biryani_25287a90-a2c9-4e7d-b519-8d1e0da9aedc.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const foods=[
+  {
+    num:"01",
+    title:"VEG BIRYANI",
+    text:"Aromatic basmati rice layered with fresh seasonal vegetables and traditional spices, slow-cooked to lock in flavor and finished with fragrant herbs and crispy fried onions.",
+    img:"https://simranz.com/wp-content/uploads/2024/06/Jain_veg_biryani_25287a90-a2c9-4e7d-b519-8d1e0da9aedc.png"
+  },
+  {
+    num:"02",
+    title:"MUSHROOM BIRYANI",
+    text:"Tender mushrooms cooked with fragrant basmati rice and hand-ground spices, slow-cooked for deep earthy flavors and finished with golden fried onions.",
+    img:"https://i.pinimg.com/474x/99/25/fe/9925fe0767f10c7390e7a29f2bfe317f.jpg"
+  },
+  {
+    num:"03",
+    title:"ARISI PARUPPU SADAM",
+    text:"Comforting South Indian classic made with rice and toor dal, tempered with mustard seeds, cumin, curry leaves, and a touch of ghee.",
+    img:"https://images.archanaskitchen.com/images/recipes/indian/main-course/indian-rice-recipes/variety-rice-mixed-rice-flavoured-rice-recipes/Kongunadu_Style_Arisi_Paruppu_Sadam_Recipe_890ba3360a.jpg"
+  },
+  {
+    num:"04",
+    title:"CORIANDER RICE",
+    text:"Fragrant rice blended with freshly ground coriander, mild spices, and light tempering, delivering a fresh and aromatic flavor.",
+    img:"./images/Coriander Rice.png"
+  }
+];
+
+const tabs=document.querySelectorAll(".food-tabs button");
+const num=document.querySelector(".food-number");
+const title=document.querySelector(".food-left h4");
+const text=document.querySelector(".food-left p");
+const img=document.querySelector(".food-image img");
+
+let current=0;
+let timer;
+
+function updateFood(i){
+  const f=foods[i];
+  num.textContent=f.num;
+  title.textContent=f.title;
+  text.textContent=f.text;
+  img.src=f.img;
+  tabs.forEach(t=>t.classList.remove("active"));
+  tabs[i].classList.add("active");
+  current=i;
+}
+
+tabs.forEach(t=>{
+  t.onclick=()=>{
+    updateFood(+t.dataset.index);
+    restart();
+  };
+});
+
+function autoplay(){
+  current=(current+1)%foods.length;
+  updateFood(current);
+}
+
+function restart(){
+  clearInterval(timer);
+  timer=setInterval(autoplay,4000);
+}
+
+timer=setInterval(autoplay,4000);
+</script>
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+            <div class="food-title mt-2">
+      <h2 style="color: #cda45e; text-align: center;">Gallery</h2>
+            <div class="divider--shape-4"></div>
+    
+      <p>Some photos from Our Appar Cafe</p>
+    </div>
+       
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+     
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact my-5">
+      <div class="container" data-aos="fade-up">
+
+    <div class="food-title">
+      <h2 style="color: #cda45e; text-align: center;">Contact</h2>
+            <div class="divider--shape-4"></div>
+    
+      <p>Timeless recipes, crafted with love and tradition.</p>
+    </div>
+      </div>
+
+      <!-- <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+  
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Building Plot # C159, Sector # M10, Abudhabi.
+                  Behind Phoenix Hospital
+                  </p>
+              </div>
+  
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  06:00 AM - 11:00 PM
+                </p>
+              </div>
+  
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>apparcafe@gmail.com</p>
+              </div>
+  
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p> +91 9712552425</p>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-8 mt-5 mt-lg-0">
+  
+            <form id="homeContactForm" action="javascript:void(0);" method="post" role="form" class="php-email-form">
+              <div class="row">
+                  <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="homeName" placeholder="Your Name" oninput="validateHomeName()" required>
+                      <div class="validate" id="homeNameError">Please enter at least 4 characters.</div>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="text" class="form-control" name="phone" id="homePhone" placeholder="Your Phone" oninput="validateHomePhone()" required>
+                      <div class="validate" id="homePhoneError">Please enter a valid phone number.</div>
+                  </div>
+              </div>
+              <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="homeEmail" placeholder="Your Email" oninput="validateHomeEmail()" required>
+                  <div class="validate" id="homeEmailError">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="8" id="homeMessage" placeholder="Message" oninput="validateHomeMessage()" required></textarea>
+                  <div class="validate" id="homeMessageError">Please enter your message.</div>
+              </div>
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                  <button type="submit" id="homeSubmitButton" onclick="sendHomeToWhatsApp()" disabled>Send Message</button>
+              </div>
+          </form>
+          
+          <script>
+              function showError(fieldError) {
+                  fieldError.style.display = "block";
+              }
+          
+              function hideError(fieldError) {
+                  fieldError.style.display = "none";
+              }
+          
+              function validateHomeName() {
+                  const name = document.getElementById("homeName").value.trim();
+                  const nameError = document.getElementById("homeNameError");
+                  if (name.length >= 4) {
+                      hideError(nameError);
+                  } else {
+                      showError(nameError);
+                  }
+                  validateHomeForm();
+              }
+          
+              function validateHomePhone() {
+                  const phone = document.getElementById("homePhone").value.trim();
+                  const phoneError = document.getElementById("homePhoneError");
+                  const phonePattern = /^[0-9]{10}$/;
+                  if (phonePattern.test(phone)) {
+                      hideError(phoneError);
+                  } else {
+                      showError(phoneError);
+                  }
+                  validateHomeForm();
+              }
+          
+              function validateHomeEmail() {
+                  const email = document.getElementById("homeEmail").value.trim();
+                  const emailError = document.getElementById("homeEmailError");
+                  const emailPattern = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+                  if (emailPattern.test(email)) {
+                      hideError(emailError);
+                  } else {
+                      showError(emailError);
+                  }
+                  validateHomeForm();
+              }
+          
+              function validateHomeMessage() {
+                  const message = document.getElementById("homeMessage").value.trim();
+                  const messageError = document.getElementById("homeMessageError");
+                  if (message.length > 0) {
+                      hideError(messageError);
+                  } else {
+                      showError(messageError);
+                  }
+                  validateHomeForm();
+              }
+          
+              function validateHomeForm() {
+                  const name = document.getElementById("homeName").value.trim();
+                  const phone = document.getElementById("homePhone").value.trim();
+                  const email = document.getElementById("homeEmail").value.trim();
+                  const message = document.getElementById("homeMessage").value.trim();
+          
+                  const nameValid = name.length >= 4;
+                  const phoneValid = /^[0-9]{10}$/.test(phone);
+                  const emailValid = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(email);
+                  const messageValid = message.length > 0;
+          
+                  document.getElementById("homeSubmitButton").disabled = !(nameValid && phoneValid && emailValid && messageValid);
+              }
+          
+              function sendHomeToWhatsApp() {
+                  const name = encodeURIComponent(document.getElementById("homeName").value.trim());
+                  const phone = encodeURIComponent(document.getElementById("homePhone").value.trim());
+                  const email = encodeURIComponent(document.getElementById("homeEmail").value.trim());
+                  const message = encodeURIComponent(document.getElementById("homeMessage").value.trim());
+          
+                  const phoneNumber = "+919712552425"; // Replace with your phone number (WhatsApp format)
+                  const messageText = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`;
+                  const whatsAppURL = `https://wa.me/${phoneNumber}?text=${messageText}`;
+          
+                  window.open(whatsAppURL, "_blank"); // Open WhatsApp in a new tab
+              }
+          </script>          
+              
+          </div>
+  
+        </div>
+  
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6">
+            <div class="footer-info">
+              <h3>Appar Cafe</h3>
+              <p>
+                Building Plot # C159, Sector # M10, Abudhabi.
+Behind Phoenix Hospital<br>
+                <strong>Phone:</strong> +91 9712552425<br>
+                <strong>Email:</strong> apparcafe@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/profile.php?id=61568537251608&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/appar_cafe_official/profilecard/?igsh=MXY5eTU3dmQ4MTFrYQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Menu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="catering.html">Catering</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Reservation</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Menu</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Breakfast</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Snacks</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Dinner</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">On Special Day</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Appar Cafe</span></strong>. All Rights Reserved <span id="year"></span>
+    </div>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Define validation functions for each field
+    function validateName() {
+        const name = document.getElementById("name").value;
+        const nameError = document.getElementById("nameError");
+        if (name.trim().length < 4) {
+            nameError.style.display = "block";
+            return false;
+        } else {
+            nameError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            emailError.style.display = "block";
+            return false;
+        } else {
+            emailError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validatePhone() {
+        const phone = document.getElementById("phone").value;
+        const phoneError = document.getElementById("phoneError");
+        if (phone.length !== 10 || isNaN(phone)) {
+            phoneError.style.display = "block";
+            return false;
+        } else {
+            phoneError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateDate() {
+        const date = document.getElementById("date").value;
+        const dateError = document.getElementById("dateError");
+        if (!date) {
+            dateError.style.display = "block";
+            return false;
+        } else {
+            dateError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateTime() {
+        const time = document.getElementById("time").value;
+        const timeError = document.getElementById("timeError");
+        if (!time) {
+            timeError.style.display = "block";
+            return false;
+        } else {
+            timeError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validatePeople() {
+        const people = document.getElementById("people").value;
+        const peopleError = document.getElementById("peopleError");
+        if (people < 1) {
+            peopleError.style.display = "block";
+            return false;
+        } else {
+            peopleError.style.display = "none";
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        const message = document.getElementById("message").value;
+        const messageError = document.getElementById("messageError");
+        if (message.trim() === '') {
+            messageError.style.display = "block";
+            return false;
+        } else {
+            messageError.style.display = "none";
+            return true;
+        }
+    }
+
+    // Combined validation function
+    function validateForm() {
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isPhoneValid = validatePhone();
+        const isDateValid = validateDate();
+        const isTimeValid = validateTime();
+        const isPeopleValid = validatePeople();
+        const isMessageValid = validateMessage();
+
+        document.getElementById("submitButton").disabled = !(isNameValid && isEmailValid && isPhoneValid && isDateValid && isTimeValid && isPeopleValid && isMessageValid);
+        return isNameValid && isEmailValid && isPhoneValid && isDateValid && isTimeValid && isPeopleValid && isMessageValid;
+    }
+
+    // Event listeners for validation
+    document.getElementById("name").addEventListener("input", validateForm);
+    document.getElementById("email").addEventListener("input", validateForm);
+    document.getElementById("phone").addEventListener("input", validateForm);
+    document.getElementById("date").addEventListener("input", validateForm);
+    document.getElementById("time").addEventListener("input", validateForm);
+    document.getElementById("people").addEventListener("input", validateForm);
+    document.getElementById("message").addEventListener("input", validateForm);
+
+    // Form submission
+    function submitForm() {
+        if (!validateForm()) return false;
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const people = document.getElementById("people").value;
+        const message = document.getElementById("message").value;
+
+        const whatsappURL = `https://api.whatsapp.com/send?phone=+919712552425&text=
+            Name: ${encodeURIComponent(name)}
+            %0AEmail: ${encodeURIComponent(email)}
+            %0APhone: ${encodeURIComponent(phone)}
+            %0ADate: ${encodeURIComponent(date)}
+            %0ATime: ${encodeURIComponent(time)}
+            %0APeople: ${encodeURIComponent(people)}
+            %0AMessage: ${encodeURIComponent(message)}`;
+
+        window.open(whatsappURL, '_blank');
+        return false; // Prevent form submission
+    }
+</script>
+</body>
+
+</html>
