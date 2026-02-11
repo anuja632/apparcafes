@@ -11,8 +11,13 @@
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="icon" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="android-chrome" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+<link rel="android-chrome" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
 
@@ -98,7 +103,7 @@
   <div class="hero-content">
     <h1 class="hero-title">A Timeless Taste of South India</h1>
     <p class="hero-sub">
-      Authentic vegetarian recipes inspired by tradition,<br>
+      Authentic vegetarian recipes inspired by tradition,
       served with warmth and simplicity.
     </p>
     <a href="menu.html" class="hero-btn">View Our Menu</a>
@@ -233,52 +238,7 @@
   </div>
 </section>
 <!-- End Menu Section -->
-<section id="why-choose" class="why-choose-section">
-  <div class="container text-center">
 
-    <h2 data-aos="fade-up">Why Choose Appar Cafe</h2>
-    <div class="divider--shape-4" data-aos="zoom-in"></div>
-
-    <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
-      Good food, great moments, every day
-    </p>
-
-    <div class="row mt-4" id="Ap">
-      <div class="col-md-3" data-aos="fade-down" data-aos-delay="200">
-        <div class="why-box">
-          <i class="fa-solid fa-mug-hot"></i>
-          <h5>Authentic Taste</h5>
-          <p>Traditional recipes with rich flavor.</p>
-        </div>
-      </div>
-
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="why-box">
-          <i class="fa-solid fa-leaf"></i>
-          <h5>Fresh Ingredients</h5>
-          <p>Quality ingredients used daily.</p>
-        </div>
-      </div>
-
-      <div class="col-md-3" data-aos="fade-down" data-aos-delay="400">
-        <div class="why-box">
-          <i class="fa-solid fa-kitchen-set"></i>
-          <h5>Hygienic Kitchen</h5>
-          <p>Clean and safe cooking.</p>
-        </div>
-      </div>
-
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
-        <div class="why-box">
-          <i class="fa-solid fa-wallet"></i>
-          <h5>Affordable Prices</h5>
-          <p>Great food at honest prices.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 <section class="food-section">
   <div class="container">
@@ -317,73 +277,7 @@
   </div>
 </section>
 
-<script>
-const foods=[
-  {
-    num:"01",
-    title:"VEG BIRYANI",
-    text:"Aromatic basmati rice layered with fresh seasonal vegetables and traditional spices, slow-cooked to lock in flavor and finished with fragrant herbs and crispy fried onions.",
-    img:"https://simranz.com/wp-content/uploads/2024/06/Jain_veg_biryani_25287a90-a2c9-4e7d-b519-8d1e0da9aedc.png"
-  },
-  {
-    num:"02",
-    title:"MUSHROOM BIRYANI",
-    text:"Tender mushrooms cooked with fragrant basmati rice and hand-ground spices, slow-cooked for deep earthy flavors and finished with golden fried onions.",
-    img:"https://i.pinimg.com/474x/99/25/fe/9925fe0767f10c7390e7a29f2bfe317f.jpg"
-  },
-  {
-    num:"03",
-    title:"ARISI PARUPPU SADAM",
-    text:"Comforting South Indian classic made with rice and toor dal, tempered with mustard seeds, cumin, curry leaves, and a touch of ghee.",
-    img:"https://images.archanaskitchen.com/images/recipes/indian/main-course/indian-rice-recipes/variety-rice-mixed-rice-flavoured-rice-recipes/Kongunadu_Style_Arisi_Paruppu_Sadam_Recipe_890ba3360a.jpg"
-  },
-  {
-    num:"04",
-    title:"CORIANDER RICE",
-    text:"Fragrant rice blended with freshly ground coriander, mild spices, and light tempering, delivering a fresh and aromatic flavor.",
-    img:"./images/Coriander Rice.png"
-  }
-];
 
-const tabs=document.querySelectorAll(".food-tabs button");
-const num=document.querySelector(".food-number");
-const title=document.querySelector(".food-left h4");
-const text=document.querySelector(".food-left p");
-const img=document.querySelector(".food-image img");
-
-let current=0;
-let timer;
-
-function updateFood(i){
-  const f=foods[i];
-  num.textContent=f.num;
-  title.textContent=f.title;
-  text.textContent=f.text;
-  img.src=f.img;
-  tabs.forEach(t=>t.classList.remove("active"));
-  tabs[i].classList.add("active");
-  current=i;
-}
-
-tabs.forEach(t=>{
-  t.onclick=()=>{
-    updateFood(+t.dataset.index);
-    restart();
-  };
-});
-
-function autoplay(){
-  current=(current+1)%foods.length;
-  updateFood(current);
-}
-
-function restart(){
-  clearInterval(timer);
-  timer=setInterval(autoplay,4000);
-}
-
-timer=setInterval(autoplay,4000);
-</script>
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -470,7 +364,142 @@ timer=setInterval(autoplay,4000);
       </div>
     </section>
     <!-- End Gallery Section -->
-     
+     <section id="why-choose" class="why-choose-section">
+  <div class="container text-center">
+
+    <h2 data-aos="fade-up">Why Choose Appar Cafe</h2>
+    <div class="divider--shape-4" data-aos="zoom-in"></div>
+
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+      Good food, great moments, every day
+    </p>
+
+    <div class="row mt-4" id="Ap">
+      <div class="col-md-3" data-aos="fade-down" data-aos-delay="200">
+        <div class="why-box">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h5>Authentic Taste</h5>
+          <p>Traditional recipes with rich flavor.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-box">
+          <i class="fa-solid fa-leaf"></i>
+          <h5>Fresh Ingredients</h5>
+          <p>Quality ingredients used daily.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-down" data-aos-delay="400">
+        <div class="why-box">
+          <i class="fa-solid fa-kitchen-set"></i>
+          <h5>Hygienic Kitchen</h5>
+          <p>Clean and safe cooking.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+        <div class="why-box">
+          <i class="fa-solid fa-wallet"></i>
+          <h5>Affordable Prices</h5>
+          <p>Great food at honest prices.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+     <section class="video-carousel">
+  <div class="container">
+            <div class="food-title mt-2">
+      <h2 style="color: #cda45e; text-align: center;">Our Clients Review </h2>
+            <div class="divider--shape-4"></div>
+    
+      <p>Experience Appar Cafe through motion</p>
+    </div>
+    <div class="swiper threeVideoSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video4.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video6.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video7.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Slide 7 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video8.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Slide 8 -->
+        <div class="swiper-slide">
+          <div class="sound-btn">🔇</div>
+          <video autoplay muted loop playsinline>
+            <source src="images/video9.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+
+    </div>
+
+  </div>
+</section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact my-5">
       <div class="container" data-aos="fade-up">
@@ -646,68 +675,7 @@ timer=setInterval(autoplay,4000);
       </div>
     </section>
     <!-- End Contact Section -->
-     <section class="video-carousel">
-  <div class="container">
-            <div class="food-title mt-2">
-      <h2 style="color: #cda45e; text-align: center;">Our Clients Review </h2>
-            <div class="divider--shape-4"></div>
-    
-      <p>Experience Appar Cafe through motion</p>
-    </div>
-    <div class="swiper threeVideoSwiper">
-      <div class="swiper-wrapper">
 
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="sound-btn">🔇</div>
-          <video autoplay muted loop playsinline>
-            <source src="images/video1.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="sound-btn">🔇</div>
-          <video autoplay muted loop playsinline>
-            <source src="images/video2.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="sound-btn">🔇</div>
-          <video autoplay muted loop playsinline>
-            <source src="images/video3.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="sound-btn">🔇</div>
-          <video autoplay muted loop playsinline>
-            <source src="images/video4.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="swiper-slide">
-          <div class="sound-btn">🔇</div>
-          <video autoplay muted loop playsinline>
-            <source src="images/video5.mp4" type="video/mp4">
-          </video>
-        </div>
-
-      </div>
-
-      <!-- Controls -->
-      <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-
-    </div>
-
-  </div>
-</section>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -794,8 +762,155 @@ Behind Phoenix Hospital<br>
   <script src="assets/js/main.js"></script>
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+const foods=[
+  {
+    num:"01",
+    title:"VEG BIRYANI",
+    text:"Aromatic basmati rice layered with fresh seasonal vegetables and traditional spices, slow-cooked to lock in flavor and finished with fragrant herbs and crispy fried onions.",
+    img:"https://simranz.com/wp-content/uploads/2024/06/Jain_veg_biryani_25287a90-a2c9-4e7d-b519-8d1e0da9aedc.png"
+  },
+  {
+    num:"02",
+    title:"MUSHROOM BIRYANI",
+    text:"Tender mushrooms cooked with fragrant basmati rice and hand-ground spices, slow-cooked for deep earthy flavors and finished with golden fried onions.",
+    img:"https://i.pinimg.com/474x/99/25/fe/9925fe0767f10c7390e7a29f2bfe317f.jpg"
+  },
+  {
+    num:"03",
+    title:"ARISI PARUPPU SADAM",
+    text:"Comforting South Indian classic made with rice and toor dal, tempered with mustard seeds, cumin, curry leaves, and a touch of ghee.",
+    img:"https://images.archanaskitchen.com/images/recipes/indian/main-course/indian-rice-recipes/variety-rice-mixed-rice-flavoured-rice-recipes/Kongunadu_Style_Arisi_Paruppu_Sadam_Recipe_890ba3360a.jpg"
+  },
+  {
+    num:"04",
+    title:"CORIANDER RICE",
+    text:"Fragrant rice blended with freshly ground coriander, mild spices, and light tempering, delivering a fresh and aromatic flavor.",
+    img:"./images/Coriander Rice.png"
+  }
+];
+
+const tabs=document.querySelectorAll(".food-tabs button");
+const num=document.querySelector(".food-number");
+const title=document.querySelector(".food-left h4");
+const text=document.querySelector(".food-left p");
+const img=document.querySelector(".food-image img");
+
+let current=0;
+let timer;
+
+function updateFood(i){
+  const f=foods[i];
+  num.textContent=f.num;
+  title.textContent=f.title;
+  text.textContent=f.text;
+  img.src=f.img;
+  tabs.forEach(t=>t.classList.remove("active"));
+  tabs[i].classList.add("active");
+  current=i;
+}
+
+tabs.forEach(t=>{
+  t.onclick=()=>{
+    updateFood(+t.dataset.index);
+    restart();
+  };
+});
+
+function autoplay(){
+  current=(current+1)%foods.length;
+  updateFood(current);
+}
+
+function restart(){
+  clearInterval(timer);
+  timer=setInterval(autoplay,4000);
+}
+
+timer=setInterval(autoplay,4000);
+</script>
 
 <script>
+/* ================= SWIPER INIT ================= */
+
+const swiper = new Swiper(".threeVideoSwiper", {
+  loop: true,
+  speed: 1200,          // smooth slow transition
+  spaceBetween: 20,
+
+  slidesPerView: 3,
+
+  autoplay: {
+    delay: 6000,        // slow carousel
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 }
+  }
+});
+
+
+/* ================= VIDEO SYSTEM ================= */
+
+const slides = document.querySelectorAll(".swiper-slide");
+
+/* 🔇 Default: all muted autoplay */
+slides.forEach(slide=>{
+  const v = slide.querySelector("video");
+  const b = slide.querySelector(".sound-btn");
+  if(v){
+    v.muted = true;
+    v.play();
+  }
+  if(b){
+    b.innerHTML = "🔇";
+  }
+});
+
+/* 🔊 Sound Button Logic (ONE AUDIO ONLY) */
+slides.forEach(slide=>{
+  const video = slide.querySelector("video");
+  const btn = slide.querySelector(".sound-btn");
+
+  if(!video || !btn) return;
+
+  btn.addEventListener("click",(e)=>{
+    e.stopPropagation();
+
+    // 🔇 Mute all videos
+    slides.forEach(s=>{
+      const v = s.querySelector("video");
+      const b = s.querySelector(".sound-btn");
+      if(v) v.muted = true;
+      if(b) b.innerHTML = "🔇";
+    });
+
+    // 🔊 Unmute only clicked video
+    video.muted = false;
+    btn.innerHTML = "🔊";
+  });
+});
+
+/* ================= SLIDE CHANGE ================= */
+swiper.on('slideChangeTransitionEnd', function () {
+  // Do NOT change sound on slide change
+  // Videos continue muted unless user clicks
+});
+</script>
+<!-- <script>
 const swiper = new Swiper(".threeVideoSwiper", {
   loop: true,
   speed: 700,
@@ -826,25 +941,15 @@ const swiper = new Swiper(".threeVideoSwiper", {
   }
 });
 
-/* ================= SOUND TOGGLE LOGIC ================= */
 
 document.querySelectorAll(".swiper-slide").forEach(slide=>{
   const video = slide.querySelector("video");
   const btn = slide.querySelector(".sound-btn");
 
   btn.addEventListener("click",(e)=>{
-    e.stopPropagation(); // stop slide click
+    e.stopPropagation(); 
 
-    // Mute all videos first
-    document.querySelectorAll(".swiper-slide video").forEach(v=>{
-      v.muted = true;
-    });
 
-    document.querySelectorAll(".sound-btn").forEach(b=>{
-      b.innerHTML = "🔇";
-    });
-
-    // Toggle current
     if(video.muted){
       video.muted = false;
       btn.innerHTML = "🔊";
@@ -855,7 +960,18 @@ document.querySelectorAll(".swiper-slide").forEach(slide=>{
   });
 });
 
-/* Auto mute on slide change */
+swiper.on('slideChange', function () {
+  const activeSlide = document.querySelector(".swiper-slide-active video");
+  const activeBtn = document.querySelector(".swiper-slide-active .sound-btn");
+
+  if(activeSlide){
+    activeSlide.muted = true;
+  }
+
+  if(activeBtn){
+    activeBtn.innerHTML = "🔇";
+  }
+});
 swiper.on('slideChange', function () {
   document.querySelectorAll(".swiper-slide video").forEach(v=>{
     v.muted = true;
@@ -865,7 +981,7 @@ swiper.on('slideChange', function () {
     b.innerHTML = "🔇";
   });
 });
-</script>
+</script> -->
   <script>
     // Define validation functions for each field
     function validateName() {
